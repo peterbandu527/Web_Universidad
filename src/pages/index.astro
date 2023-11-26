@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../../assets/scss/astro-ecommerce.scss';
+import Navbar from '../components/navbar';
+import Logo_umc from '../components/logo_umc';
+import Carousel from '../components/componentes_web/carousel';
+import Estudios from '../components/componentes_web/estudios';
+import Footer from '../components/footer';
+import Footer_copy from '../components/footer_copy';
+import Zona_estudiantes from '../components/componentes_web/zona_estudiantes';
+import Historia from '../components/componentes_web/historia';
+import Nuestros_simbolos from '../components/componentes_web/nuestros_simbolos';
+---
+
+<Layout title="UMC web | Inicio">
+	<main>
+    <Logo_umc/>
+    <Navbar />
+    <Carousel/>
+    <Estudios/>
+    <Zona_estudiantes/>
+    <Nuestros_simbolos/>
+    <Historia/>
+    <Footer/>
+    <Footer_copy/>
+	</main>
+</Layout>
