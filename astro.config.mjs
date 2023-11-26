@@ -7,5 +7,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://peterbandu527.github.io',
-  base: '/Web_Universidad'
+  base: '/web_universidad'
 });
