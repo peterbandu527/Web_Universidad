@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarColor02">
         <ul className="navbar-nav me-7 mb-2 mb-lg-0">
           <li className="nav-item me-5">
-            <a className="nav-link active" aria-current="page" href={`${import.meta.env.BASE_URL}`}>Inicio</a>
+            <a className="nav-link" href={`${import.meta.env.BASE_URL}`}>Inicio</a>
           </li>
           <li className="nav-item me-5">
             <a className="nav-link" href={`${import.meta.env.BASE_URL}services`}>Servicios</a>
@@ -17,9 +17,17 @@ const Navbar = () => {
           <li className="nav-item me-5">
             <a className="nav-link" href={`${import.meta.env.BASE_URL}noticias`}>Noticias</a>
           </li>
-          <li className="nav-item me-5">
-            <a className="nav-link" href="#">Dependencias</a>
-          </li>
+          <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dependencias
+          </a>
+          <ul className="dropdown-menu" style={{background:'#0C7FCF'}}>
+            <li><a className="dropdown-item" href={`${import.meta.env.BASE_URL}rectorado`}>Rectorado</a></li>
+            <li><a className="dropdown-item" href="#">Vicerrectorado Académico</a></li>
+            <li><a className="dropdown-item" href="#">Vicerrectorado Administrativo</a></li>
+            <li><a className="dropdown-item" href="#">Secretaria General</a></li>
+          </ul>
+        </li>
           <li className="nav-item me-5">
             <a className="nav-link" href="#">Correo</a>
           </li>

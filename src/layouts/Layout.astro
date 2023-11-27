@@ -4,7 +4,7 @@ import Logo_umc from '../components/logo_umc';
 import Footer from '../components/footer';
 import Footer_copy from '../components/footer_copy';
 
-import { ViewTransitions } from 'astro:transitions';
+// import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
 	title: string;
@@ -30,10 +30,10 @@ const { title } = Astro.props;
     
 	</head>
 	<body>
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
     
     <Logo_umc/>
-    <Navbar />
+    <Navbar transition:persist/>
     <main transition:animate="fade">
       <slot />
     </main>

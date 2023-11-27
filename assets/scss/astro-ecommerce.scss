@@ -45,10 +45,43 @@
 .titulo1{
     color: #0C7FCF;
 }
-.col-arreglo{
-    width: 63.66%!important;
+@media (min-width: 1200px) {
+    .col-arreglo{
+        width: 63.66%!important;
+    }
 }
 .subtitulo{
     color: rgba(0, 0, 0, 0.41)
     ;
+}
+.dropdown-item {
+    color:#fff;
+}
+.dropdown-item:hover{
+    color: #000!important;
+    background-color: #8AEFFA;
+    ;
+}
+.bg-institutcional1{
+    background: #8AEFFA;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 6%;
+    margin-left: 5%;
+}
+.bg-institutcional{
+    background: rgba(12, 127, 207, 0.6980392157);
+    padding: 5%;    
+    border: 2px solid #fff;
+}
+.bg-institutcional a{
+    color: #fff;
+}
+.column_button{
+    display: grid;
+    grid-auto-flow: column;
+}
+.justy_end{
+    justify-self: end;
 }
