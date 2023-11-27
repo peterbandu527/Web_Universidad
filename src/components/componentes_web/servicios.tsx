@@ -3,7 +3,7 @@ const Services = () => {
     <div className="container mt-5 mb-5">
       <h4 className="borde_titulo">Servicios</h4>
       <div className="row">
-        <div className="col-4">
+        <div className="col-12 col-lg-4 col-md-4">
           <div className="container d-flex justify-content-center">
             <div
               className="card shadow"
@@ -26,7 +26,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-12 col-lg-4 col-md-4">
           <div className="container d-flex justify-content-center">
             <div
               className="card shadow"
@@ -49,7 +49,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-12 col-lg-4 col-md-4">
           <div className="container d-flex justify-content-center">
             <div
               className="card shadow"
