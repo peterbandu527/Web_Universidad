@@ -9,13 +9,13 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarColor02">
         <ul className="navbar-nav me-7 mb-2 mb-lg-0">
           <li className="nav-item me-5">
-            <a className="nav-link active" aria-current="page" href="/web-universidad">Inicio</a>
+            <a className="nav-link active" aria-current="page" href={`${import.meta.env.BASE_URL}`}>Inicio</a>
           </li>
           <li className="nav-item me-5">
-            <a className="nav-link" href="#">Servicios</a>
+            <a className="nav-link" href={`${import.meta.env.BASE_URL}services`}>Servicios</a>
           </li>
           <li className="nav-item me-5">
-            <a className="nav-link" href="#">Noticias</a>
+            <a className="nav-link" href={`${import.meta.env.BASE_URL}noticias`}>Noticias</a>
           </li>
           <li className="nav-item me-5">
             <a className="nav-link" href="#">Dependencias</a>

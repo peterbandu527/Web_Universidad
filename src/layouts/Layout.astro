@@ -1,6 +1,14 @@
 ---
+import Navbar from '../components/navbar';
+import Logo_umc from '../components/logo_umc';
+import Footer from '../components/footer';
+import Footer_copy from '../components/footer_copy';
+
+import { ViewTransitions } from 'astro:transitions';
+
 export interface Props {
 	title: string;
+  
 }
 
 const { title } = Astro.props;
@@ -19,20 +27,18 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
     <link rel="canonical" href="https://www.creative-tim.com/astro/" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
-    <!-- End Google Tag Manager -->
+    
 	</head>
 	<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-		<slot />
+    <ViewTransitions />
+    
+    <Logo_umc/>
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+		<Footer/>
+    <Footer_copy/>	
 	</body>
   <script
     src="https://kit.fontawesome.com/349ee9c857.js"

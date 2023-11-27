@@ -7,5 +7,9 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://peterbandu527.github.io',
-  base: '/web-universidad'
+  base: '/web-universidad',
+  experimental: {
+		viewTransitions: true
+	}
+
 });
