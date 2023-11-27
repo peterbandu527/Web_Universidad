@@ -10,6 +10,5 @@ export default defineConfig({
   base: '/web-universidad',
   experimental: {
 		viewTransitions: true
-	},
-  output: 'server'
+	},  
 });
