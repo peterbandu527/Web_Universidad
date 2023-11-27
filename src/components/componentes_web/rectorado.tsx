@@ -2,7 +2,7 @@ const Rectorado = () => {
   return (
     <div className="container mb-5">
       <div className="row">
-        <div className="col-4">
+        <div className="col-12 col-lg-4 col-md-6">
           <div id="cara_viejo_mamon">
             <div className="card" style={{width:'90%'}}>
               <div className="car-body" style={{padding:'20%',paddingTop:'15%',background:'#0C7FCF33'}}>              
@@ -38,7 +38,7 @@ const Rectorado = () => {
             </div>
           </div>          
         </div>
-        <div className="col-8">
+        <div className="col-12 col-lg-8 col-md-6">
           <div className="card mt-5">
             <div className="card-body" style={{background:'#E4E4E482',padding:'10%'}}>
               <h4 className="titulo1 text-center">Coordinación General Consultoría Jurídica</h4>
